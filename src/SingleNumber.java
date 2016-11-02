@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 /**
- * LeetCode 
+ * LeetCode
  * Problem 136
  * @author Siddharth
  *
