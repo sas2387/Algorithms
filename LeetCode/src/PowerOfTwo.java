@@ -1,7 +1,7 @@
 /**
  * LeetCode
  * Problem 231
- * @author siddharthshah
+ * @author Siddharth
  *
  */
 public class PowerOfTwo {

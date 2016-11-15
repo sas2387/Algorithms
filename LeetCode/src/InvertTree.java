@@ -1,7 +1,7 @@
 /**
  * LeetCode
  * Problem 226
- * @author siddharthshah
+ * @author Siddharth
  *
  */
 public class InvertTree {
