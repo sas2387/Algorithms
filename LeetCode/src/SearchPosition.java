@@ -9,7 +9,8 @@ public class SearchPosition {
 	public static void main(String[] args) {
 		
 	}
-
+	
+	//Using Binary Search Algorithm to search the element
 	public int searchInsert(int[] nums, int target) {
 		if(target <= nums[0]){
 			return 0;
