@@ -1,5 +1,7 @@
 /**
- * Problem 419
+ * 
+ * LeetCode Problem 419
+ * 
  * @author Siddharth
  *
  */
@@ -12,22 +14,20 @@ public class BattleShip {
 	}
 
 	public int countBattleships(char[][] board) {
-		int k = 0;
 		int count = 0;
 
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[i].length; j++) {
 				if (board[i][j] == 'X') {
-					board[i][j] = '.';
-					k = j + 1;
-					while (k < board[i].length && board[i][k] == 'X') {
-						board[i][k] = '.';
-						k++;
+					if (i > 0) {
+						if (board[i - 1][j] == 'X') {
+							continue;
+						}
 					}
-					k = i + 1;
-					while (k < board.length && board[k][j] == 'X') {
-						board[k][j] = '.';
-						k++;
+					if (j > 0) {
+						if (board[i][j - 1] == 'X') {
+							continue;
+						}
 					}
 					count++;
 				}
